@@ -41,7 +41,7 @@ nav > ul > li > a {
 
 nav > ul > li:hover {
   animation: "navegacion";
-  border-style: groove;
+  border: 0;
   border-color: rgb(143, 177, 240);
   background-color: rgb(214, 225, 250);
   color: rgb(65, 54, 133);
@@ -54,7 +54,6 @@ main {
   border-style: solid;
   border-width: 2px;
 }
-
 #principal {
   width: 400px;
   background-color: blanchedalmond;
@@ -69,21 +68,39 @@ main div div img {
 #inicio {
   background-color: gainsboro;
 }
-
-#equipo {
-  background-color: rgb(221, 255, 251);
-}
-
 #servicios {
   background-color: rgb(212, 229, 243);
   width: 300px;
 }
+
+/* equipo */
+.equipo {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(233, 249, 253);
+}
+p.nombres {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p.cargo {
+  
+}
+img.personal {
+  width: 200px;
+  height: 200px;
+}
+
 /* pagina seguros / planes de salud */
 div.plandesalud {
   width: 100%;
   background-color: rgb(228, 243, 250);
 }
-
+h2.plandesalud {
+  display: flex;
+  justify-content: center;
+  color: rgb(7, 16, 78);
+}
 h3.plandesalud {
   color: rgb(27, 17, 142);
 }
@@ -91,13 +108,16 @@ p.plandesalud {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
 }
-
 ul.plandesalud li {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
-  color: green;
+}
+ul.plandesalud {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
 }
 
+/* footer */
 footer {
   display: flex;
   height: 350px;
@@ -108,13 +128,11 @@ footer {
   font-style: italic;
   font-family: "Times New Roman", Times, serif;
 }
-
 footer > img {
   height: 300px;
   width: 180px;
   border-radius: 5%;
 }
-
 footer > div > ul > li {
   justify-content: right;
   list-style-type: none;
