@@ -1,0 +1,290 @@
+* {
+  padding: 1%;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+h1 {
+  color: rgb(153, 202, 186);
+  display: flex;
+  justify-content: flex-end;
+}
+
+h2 {
+  color: gray;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav {
+  height: 100px;
+  text-align: center;
+  background-color: rgb(214, 233, 244);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+nav > ul > li {
+  border-radius: 15%;
+  list-style-type: none;
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: white;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: rgb(32, 33, 87);
+}
+
+nav > ul > li:hover {
+  animation: "navegacion";
+  border-style: groove;
+  border-color: rgb(143, 177, 240);
+  background-color: rgb(214, 225, 250);
+  color: rgb(65, 54, 133);
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+}
+
+#principal {
+  width: 400px;
+  background-color: blanchedalmond;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+main div div img {
+  height: 200px;
+}
+
+#inicio {
+  background-color: gainsboro;
+}
+
+#equipo {
+  background-color: rgb(221, 255, 251);
+}
+
+#servicios {
+  background-color: rgb(212, 229, 243);
+  width: 300px;
+}
+/* pagina seguros / planes de salud */
+div.plandesalud {
+  width: 100%;
+  background-color: rgb(228, 243, 250);
+}
+
+h3.plandesalud {
+  color: rgb(27, 17, 142);
+}
+p.plandesalud {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+ul.plandesalud li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: green;
+}
+
+footer {
+  display: flex;
+  height: 350px;
+  text-align: center;
+  background-color: rgb(60, 60, 114);
+  color: white;
+  line-height: 1pc;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+footer > img {
+  height: 300px;
+  width: 180px;
+  border-radius: 5%;
+}
+
+footer > div > ul > li {
+  justify-content: right;
+  list-style-type: none;
+  font-size: 13px;
+  color: whitesmoke;
+}
+
+/*La página debe ser responsiva y diseñarse para al menos 3 tamaños de dispositivos, empleando media queries.
+
+
+@media (min-width: 1201px) {
+  #datos {
+    float: left;
+    width: 30%;
+  }
+  #curriculum {
+    float: left;
+    width: 70%;
+  }
+  #formacion {
+    float: left;
+    width: 50%;
+  }
+  #experiencia {
+    float: left;
+    width: 50%;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  #datos {
+    float: left;
+    width: 30%;
+  }
+  #curriculum {
+    float: left;
+    width: 70%;
+  }
+  #formacion {
+    float: left;
+    width: 50%;
+  }
+  #experiencia {
+    float: unset;
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 600px) {
+}
+ */
+
+/* * {
+  padding: 1%;
+  border-style: solid;
+  border-color: darkblue;
+  border-width: 2px;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+nav {
+  text-align: center;
+  background-color: rgb(250, 243, 240);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+nav > ul {
+}
+nav > ul > li {
+  border-radius: 15%;
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+}
+
+main {
+  display: flex;
+  border-color: pink;
+  border-style: solid;
+  border-width: 2px;
+}
+#principal {
+  width: 400px;
+  background-color: blanchedalmond;
+  align-content: flex-start;
+  flex-direction: column;
+}
+#inicio {
+  background-color: gainsboro;
+}
+
+#equipo {
+  background-color: rgb(221, 255, 251);
+}
+
+#servicios {
+  background-color: rgb(212, 229, 243);
+  width: 300px;
+}
+
+footer {
+  display: flex;
+  height: 350px;
+  text-align: center;
+  background-color: rgb(60, 60, 114);
+  color: white;
+  line-height: 1pc;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+footer > img {
+  height: 300px;
+  width: 180px;
+  border-radius: 5%;
+}
+
+footer > div > ul > li {
+  justify-content: right;
+  list-style-type: none;
+  font-size: 13px;
+  color: whitesmoke;
+}
+
+/*La página debe ser responsiva y diseñarse para al menos 3 tamaños de dispositivos, empleando media queries.
+
+@media (min-width: 1201px) {
+  #datos {
+    float: left;
+    width: 30%;
+  }
+  #curriculum {
+    float: left;
+    width: 70%;
+  }
+  #formacion {
+    float: left;
+    width: 50%;
+  }
+  #experiencia {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  #datos {
+    float: left;
+    width: 30%;
+  }
+  #curriculum {
+    float: left;
+    width: 70%;
+  }
+  #formacion {
+    float: left;
+    width: 50%;
+  }
+  #experiencia {
+    float: unset;
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+}
+ */
