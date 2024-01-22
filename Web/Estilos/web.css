@@ -1,23 +1,20 @@
+/* general */
 * {
   padding: 1%;
 }
-
 body {
   background-color: aliceblue;
 }
-
 h1 {
   color: rgb(153, 202, 186);
   display: flex;
   justify-content: flex-end;
 }
-
 h2 {
   color: gray;
   display: flex;
   justify-content: flex-end;
 }
-
 nav {
   height: 100px;
   text-align: center;
@@ -33,12 +30,10 @@ nav > ul > li {
   justify-content: center;
   background-color: white;
 }
-
 nav > ul > li > a {
   text-decoration: none;
   color: rgb(32, 33, 87);
 }
-
 nav > ul > li:hover {
   animation: "navegacion";
   border: 0;
@@ -48,15 +43,17 @@ nav > ul > li:hover {
   font-weight: 600;
 }
 
+/* principal */
+
 main {
   display: flex;
-  border-color: white;
-  border-style: solid;
-  border-width: 2px;
+  border-width: 0;
 }
 #principal {
-  width: 400px;
-  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+  background-color: rgba(234, 243, 255, 0.825);
   align-content: flex-start;
   flex-direction: column;
 }
@@ -65,12 +62,54 @@ main div div img {
   height: 200px;
 }
 
-#inicio {
-  background-color: gainsboro;
+aside {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#servicios {
-  background-color: rgb(212, 229, 243);
-  width: 300px;
+div.vertical {
+  display: flex;
+  flex-direction: column;
+}
+div.servicios ul li {
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#inicio {
+  background-color: rgba(225, 238, 255, 0.825);
+}
+
+/* blog principal */
+section.blog {
+  display: flex;
+  flex-direction: row;
+}
+
+img.blogfoto {
+  height: 150px;
+  width: 150px;
+}
+
+div.posts {
+  display: flex;
+  flex-direction: row;
+}
+
+div.posts a {
+  justify-content: center;
+  text-decoration: underline;
+  color: #000;
+}
+
+div.posts a:hover {
+  color: black;
+  font-weight: 500;
+  background-color: #cadffc;
+}
+
+div.posts a:visited {
+  color: rgb(93, 93, 204);
 }
 
 /* equipo */
